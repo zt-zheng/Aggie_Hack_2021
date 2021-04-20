@@ -14,6 +14,8 @@ Using NLP tools (Sentiment Analysis and Topic Modeling) to analyze the impact of
       <a href="#getting-started">Getting Started</a>
     </li>
     <li><a href="#methods">Methods</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
 </details>
 
