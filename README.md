@@ -36,7 +36,7 @@ We concluded that Key Opinion Leader's opinions do matter in shaping people's vi
 
 <!-- GETTING STARTED -->
 ## Getting Started
-To run the code, open the Aggiehack.ipynb file. Jupyter Notebook is preferred.
+To run the code, open the Aggiehack_random_jungle.ipynb file. Jupyter Notebook is preferred.
 To run the code in Google Colab, please enable local runtime. 
 For detailed instructions, please refer to [Running Colab on Local Runtime](https://research.google.com/colaboratory/local-runtimes.html)
 
