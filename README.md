@@ -77,7 +77,7 @@ We first define the two time periods near the two key events. The first time per
 ## Contact
 
 * Qihan Guan - [LinkedIn](https://www.linkedin.com/in/qihan-guan/) 
-* Kexin Wang - [LinkedIn](linkedin.com/in/kexin-w) 
+* Kexin Wang - [LinkedIn](https://www.linkedin.com/in/kexin-w/) 
 * Zhitao Zheng - [LinkedIn](https://www.linkedin.com/in/zhitao-zheng/) 
 
 
