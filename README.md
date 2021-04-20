@@ -8,7 +8,7 @@ Using NLP tools (Sentiment Analysis and Topic Modeling) to analyze the impact of
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#overview-of-the-problem">Overview of the problem</a>
+      <a href="#overview-of-the-problem">Overview of the Problem</a>
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
@@ -22,7 +22,7 @@ Using NLP tools (Sentiment Analysis and Topic Modeling) to analyze the impact of
 
 
 <!-- OVERVIEW OF THE PROBLEM -->
-## Overview of the problem
+## Overview of the Problem
 
 The 2021 UC Davis Aggie Hacks X Google Cloud COVID-19 Challenge brought together analytics enthusiasts from nine institutions to compete on analyzing the impact of COVID-19 on sectors including education, housing, employment, stock prices, politics, vaccination distribution, misinformation, etc.
 
@@ -30,16 +30,18 @@ The two-week virtual hackathon allowed students to demonstrate their skills and 
 
 Our project analyzed the social impact of COVID-19 on racism through sentiment analysis and topic modeling of tweets. We measured the impact by analyzing tweets scraped from Twitter two weeks prior and two weeks after the occurrence of two key events: 
 * Trump's 'Chinese Virus' tweet on March 17, 2020
+
 ![Trump's tweet](https://i.imgur.com/qgtGhwE.png)
 
 ![WordCloud1](https://i.imgur.com/WFiMhsP.png)
 
 * The Atlanta mass shooting on March 16, 2021.
+
 ![AtlantaShooting](https://i.imgur.com/RD7UEvf.jpg)
 
 ![WordCloud2](https://i.imgur.com/udSq7aL.png)
 
-The first time period was 2020-03-02 ~ 2020-04-01 (+/- two weeks near 03-17-2020 when Trump sent the first tweet on Chinese Virus). The second time period was 2021-03-01 ~ 2021-03-31 (+/- two weeks near 03-16-2021 when the Atlanta Mass Shooting occurred). For each time period, we used the pre-defined functions to scrape the tweets, conduct exploratory analysis, and build LDA topic models on negative tweets. We specifically used the [SentimentIntensityAnalyzer (SIA)](https://www.nltk.org/api/nltk.sentiment.html) module to classify tweets into positive, negative, and neutral categories using polarity scores. To make the analyzer fit our case study, we added customized weights to the existing SIA lexicon. We also divided each time period into three time-slots, before-event, peak-of-event, and after-event, and then explored the WordCloud and built topic models for each time slot and compared the results.
+The first time period was 2020-03-02 ~ 2020-04-01 (+/- 2 weeks near 03-17-2020 when Trump sent the first tweet on Chinese Virus). The second time period was 2021-03-01 ~ 2021-03-31 (+/- 2 weeks near 03-16-2021 when the Atlanta Mass Shooting occurred). For each time period, we used the pre-defined functions to scrape the tweets, conduct exploratory analysis, and build LDA topic models on negative tweets. We specifically used the [SentimentIntensityAnalyzer (SIA)](https://www.nltk.org/api/nltk.sentiment.html) module to classify tweets into positive, negative, and neutral categories using polarity scores. To make the analyzer fit our case study, we added customized weights to the existing SIA lexicon. We also divided each time period into three time-slots, before-event, peak-of-event, and after-event, and then explored the WordCloud and built topic models for each time slot and compared the results.
 
 We concluded that Key Opinion Leader's opinions do matter in shaping people's views on racism. Hate speech is contagious; associating negative events with groups of people stimulates hate speech, and pose community on threats. On the other hand, positive speech is impactful. The #StopAsianHate campaign on social media successfully raised awareness of anti-racism. So people need to speak up; your voice matter!
 
@@ -50,7 +52,7 @@ To run the code, open the Aggiehack_random_jungle.ipynb file. Jupyter Notebook i
 To run the code in Google Colab, please enable local runtime. 
 For detailed instructions, please refer to [Running Colab on Local Runtime](https://research.google.com/colaboratory/local-runtimes.html)
 
-This first library to install is ```snscrape ``` for scraping tweets from tweeter:
+This first library to install is ```snscrape``` for scraping tweets from tweeter:
   ```sh
   !pip install git+https://github.com/JustAnotherArchivist/snscrape.git
   ```
@@ -79,7 +81,7 @@ To view topic model visualizations, please download peak_event1_topic_viz.html a
 
 <!-- DATA GATHERING PROCESS AND STORAGE OPTION -->
 ## Data Gathering Process and Storage Option
-We gathered our data by scraping tweets from Twitter through the ```snscrape ``` package. To address our proposed problem, we specified the search keywords and time-slots by modifying the query parameters inside the ```snscrape ``` package:
+We gathered our data by scraping tweets from Twitter through the ```snscrape``` package. To address our proposed problem, we specified the search keywords and time-slots by modifying the query parameters inside the ```snscrape``` package:
 ```
 query = '(china OR chinese OR asian) (covid OR virus OR corona OR pandemic) since:{} until:{} lang:en min_faves:{}'.format(startdate, enddate, min_faves)
 tweets_df1 = tweets_analysis(startdate = "2020-03-02", enddate = "2020-04-01", min_faves = 100)
