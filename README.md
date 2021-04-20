@@ -73,6 +73,7 @@ We first define the two time periods near the two key events. The first time per
 
 
 <!-- ACKNOWLEDGEMENTS -->
+
 ## Acknowledgements
 * [snscrape](https://github.com/JustAnotherArchivist/snscrape)
 * [twitter-advanced-search](https://github.com/igorbrigadir/twitter-advanced-search)
