@@ -14,7 +14,6 @@ Using NLP tools (Sentiment Analysis and Topic Modeling) to analyze the impact of
       <a href="#getting-started">Getting Started</a>
     </li>
     <li><a href="#methods">Methods</a></li>
-    <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
 </details>
@@ -71,14 +70,6 @@ To view topic model visualizations, please download peak_event1_topic_viz.html a
 ## Methods
 
 We first define the two time periods near the two key events. The first time period is 2020-03-02 ~ 2020-04-01 (+/- two weeks near 03-17-2020 when Trump sent the first tweet on Chinese Virus). The second time period is 2021-03-01 ~ 2021-03-31 (+/- two weeks near 03-16-2021 when the Atlanta Mass Shooting occurred). For each time period, we used the pre-defined functions to scrape the tweets, conduct exploratory analysis, and build topic models on negative tweets. We specifically used the [SentimentIntensityAnalyzer (SIA)](https://www.nltk.org/api/nltk.sentiment.html) module to classify tweets into positive, negative, and neutral categories using polarity scores. To make the analyzer fit our case study, we added customized weights to the existing SIA lexicon. We also divided each time period into three time-slots, before-event, peak-of-event, and after-event, and then explored the WordCloud and built topic models for each time slot and compared the results.
-
-  
-<!-- CONTACT -->
-## Contact
-
-* Qihan Guan - [LinkedIn](https://www.linkedin.com/in/qihan-guan/) 
-* Kexin Wang - [LinkedIn](https://www.linkedin.com/in/kexin-w/) 
-* Zhitao Zheng - [LinkedIn](https://www.linkedin.com/in/zhitao-zheng/) 
 
 
 <!-- ACKNOWLEDGEMENTS -->
