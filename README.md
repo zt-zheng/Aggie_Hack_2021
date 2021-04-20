@@ -65,7 +65,7 @@ In conda environment:
   python -m spacy download en_core_web_sm 
   conda install -c conda-forge pyldavis
   ```
-
+To view topic model visualizations, please download peak_event1_topic_viz.html and peak_event2_topic_viz.html and open with your browser. 
 
 <!-- Methods -->
 ## Methods
