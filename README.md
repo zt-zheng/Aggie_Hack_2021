@@ -60,8 +60,8 @@ _For more details, please refer to the [Documentation](https://github.com/JustAn
 
 Next, install Pandas and Regex if you do not have them installed:
   ```sh
-  !pip install pandas
-  !pip install re
+  pip install pandas
+  pip install re
   ```
 Next, download these nltk data:
   ```
@@ -69,6 +69,10 @@ Next, download these nltk data:
   nltk.download('vader_lexicon')
   nltk.download('punkt')
   ```
+Next, install wordcloud:
+```
+pip install wordcloud
+```
 Next, install packages for LDA topic modeling:
 In conda environment:
   ```sh
