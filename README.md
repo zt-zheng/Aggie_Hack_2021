@@ -91,7 +91,7 @@ query = '(china OR chinese OR asian) (covid OR virus OR corona OR pandemic) sinc
 tweets_df1 = tweets_analysis(startdate = "2020-03-02", enddate = "2020-04-01", min_faves = 100)
 tweets_df2 = tweets_analysis(startdate = "2021-03-01", enddate = "2021-03-31", min_faves = 100)
 ```
-We specifically looked for tweets that contain keywords both related to china/chinese/asian and covid/virus/corona/pandemic. We only kept tweets that had a minimum of 100 likes so that our data can be representative. We saved our data in _Pandas_ dataframes for exploratory analysis and topic modelinng.    
+We specifically looked for tweets that contain keywords both related to china/chinese/asian and covid/virus/corona/pandemic. We only kept tweets that had a minimum of 100 likes so that our data can be representative. We saved our data in _Pandas_ dataframes for exploratory analysis and topic modeling.    
 
 <!-- MODEL PERFORMANCE -->
 ## Model Performance
