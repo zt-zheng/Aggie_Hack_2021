@@ -1,5 +1,5 @@
 # Aggie_Hack_2021
-## Team _Random Jungle_
+## Team _Random Jungle_: Zhitao Zheng, Kexin Wang, and Qihan Guan
 Using NLP tools (Sentiment Analysis and Topic Modeling) to analyze the impact of COVID-19 on racial issues. 
 
 
